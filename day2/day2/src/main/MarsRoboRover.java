@@ -1,3 +1,5 @@
+package main;
+
 public class MarsRoboRover {
     public static void main(String[] args) {
         String currentPosition = "3 3 E";
@@ -8,15 +10,15 @@ public class MarsRoboRover {
         int y = Integer.valueOf(positions[1]);
         String dir = positions[2];
 
-        Rover rover = new Rover(x,y,dir);
+        RoverVector roverVector = new RoverVector(x,y,dir);
         for (char command : commands.toCharArray()) {
-            rover.rove(command);
+            roverVector.rove(command);
         }
-        getRoverDetails(currentPosition,commands,rover);
+        getRoverDetails(currentPosition,commands,roverVector);
     }
-    private static void getRoverDetails(String currentPosition,String commands,Rover rover){
+    private static void getRoverDetails(String currentPosition,String commands,RoverVector roverVector){
         System.out.println("currentPosition..." + currentPosition);
         System.out.println("commands..." + commands);
-        System.out.println("newPosition..." + rover.getPosition() );
+        System.out.println("newPosition..." + roverVector.getVectorDetails() );
     }
 }
