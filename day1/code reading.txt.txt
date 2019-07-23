@@ -1,0 +1,12 @@
+CODE READING
+1. Starting point
+2. Flow (split points help)
+3. Commments (less priority, may be wrong)
+4. Naming (clarity, don't keep it for later)
+5. Documentation (comments that lead to documentation)
+6. Readability (Naming as a whole)
+7. Code layout (directory structure, industry standard layouts)
+8. Test cases (valid input/output, categorizing pass and fails, 
+    unit testing just methods, testing multiple flows, executing the parts you want, gain control)
+9. Problem (real life understanding)
+10. Execution (visual output)
