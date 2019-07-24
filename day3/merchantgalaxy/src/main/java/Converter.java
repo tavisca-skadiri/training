@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Converter {
-    private HashMap<String,Integer> arabicSymbols;
+    private HashMap<String,Integer> words;
     private static HashMap<String,Integer> romanSymbols = new HashMap<>(){{
         put("I",1);
         put("V",5);
@@ -13,18 +13,25 @@ public class Converter {
         put("M",1000);
     }};
     public Converter() {
-        arabicSymbols = new HashMap<>();
+        words = new HashMap<>();
     }
-    public HashMap<String, Integer> getArabicSymbols(ArrayList<String> input){
-        return setArabicSymbols(input);
-    }
-    private HashMap<String, Integer> setArabicSymbols(ArrayList<String> input){
+    public HashMap<String, Integer> setItemValues(ArrayList<String> input){
         for(String line : input){
-            String arabicNumeral  = line.split(" ")[0];
+            String word = line.split(" ")[0];
             String romanNumeral = line.split(" ")[2];
             int value = romanSymbols.get(romanNumeral);
-            arabicSymbols.put(arabicNumeral,value);
+            words.put(word,value);
         }
-        return arabicSymbols;
+        return words;
+    }
+    public HashMap<String, Integer> setUnknownItemAndCredit(ArrayList<String> input){
+        for(String line : input) {
+            String word1 = line.split(" ")[0];
+            String word2 = line.split(" ")[1];
+            String unknownWord = line.split(" ")[2];
+            int credits = Integer.parseInt(line.split(" ")[4]);
+            words.put(unknownWord,credits);
+        }
+        return words;
     }
 }
