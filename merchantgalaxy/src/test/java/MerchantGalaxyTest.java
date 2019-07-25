@@ -80,16 +80,7 @@ class MerchantGalaxyTest {
     }
     @Test
     void getValueOfRomanNumber(){
-        WordToRomanParser wordToRomanParser = new WordToRomanParser();
-        ArrayList<String> input = new ArrayList<>();
-        input.add("glob is I");
-        input.add("prok is V");
-        input.add("pish is X");
-        input.add("tegj is L");
-        HashMap<String,String> alias = wordToRomanParser.setAlias(input);
-
         StatementParser statementParser = new StatementParser();
-
         assertEquals(2, statementParser.romanToDecimal("II"));
     }
 }
