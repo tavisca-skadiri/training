@@ -23,11 +23,6 @@ public class StatementParser {
             String romanNumber = generateRomanNumber(words[0],alias);
             Statement statement = new Statement(romanNumber,credits,unknownMetal);
             statements.add(statement);
-//            String[] aliases = line.split(words[0]);
-//            String unknownWord = line.split(" ")[2];
-//            int credits = Integer.parseInt(line.split(" ")[4]);
-//            double value = calculateValueFromCredits(credits,word1,word2,words);
-//            unknownWords.put(unknownWord,value);
         }
         return statements;
     }
@@ -40,12 +35,12 @@ public class StatementParser {
         }
         return romanNumber.toString();
     }
-    int romanToDecimal(String str) {
-        int res = 0;
+    double romanToDecimal(String str) {
+        double res = 0;
         for (int i=0; i<str.length(); i++) {
-            int s1 = romanSymbols.get(str.charAt(i));
+            double s1 = romanSymbols.get(str.charAt(i));
             if (i+1 <str.length()) {
-                int s2 = romanSymbols.get(str.charAt(i + 1));
+                double s2 = romanSymbols.get(str.charAt(i + 1));
                 if (s1 >= s2) {
                     res = res + s1;
                 }
@@ -61,36 +56,15 @@ public class StatementParser {
         }
         return res;
     }
-    public HashMap<String, Double> setUnknownItemAndCredit(ArrayList<String> input, HashMap<String, Double> words){
-        HashMap<String, Double> unknownWords = new HashMap<>();
-        for(String line : input) {
-            String word1 = line.split(" ")[0];
-            String word2 = line.split(" ")[1];
-            String unknownWord = line.split(" ")[2];
-            int credits = Integer.parseInt(line.split(" ")[4]);
-            double value = calculateValueFromCredits(credits,word1,word2,words);
-            unknownWords.put(unknownWord,value);
+    double calculateMetalValue(Statement statement){
+        return statement.credits / romanToDecimal(statement.romanNumber);
+    }
+    public HashMap<String,Double> getMetalValues(ArrayList<Statement> statements){
+        HashMap<String,Double> metals = new HashMap<>();
+        for(Statement statement:statements){
+            metals.put(statement.unknownMetal,calculateMetalValue(statement));
         }
-        return unknownWords;
+        return metals;
     }
-    public HashMap<String, Double> setUnknownWords(ArrayList<String> input, HashMap<String, Double> words){
-        HashMap<String, Double> unknownWords = new HashMap<>();
-        for(String line : input) {
-            String word1 = line.split(" ")[0];
-            String word2 = line.split(" ")[1];
-            String unknownWord = line.split(" ")[2];
-            int credits = Integer.parseInt(line.split(" ")[4]);
-            double value = calculateValueFromCredits(credits,word1,word2,words);
-            unknownWords.put(unknownWord,value);
-        }
-        return unknownWords;
-    }
-    private double calculateValueFromCredits(int credits,String word1, String word2,HashMap<String,Double> words){
-        double value;
-        if(words.get(word1) < words.get(word2))
-            value = credits / (words.get(word2) - words.get(word1));
-        else
-            value = credits / ((words.get(word2) + words.get(word1)));
-        return value;
-    }
+
 }
