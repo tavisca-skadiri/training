@@ -106,6 +106,31 @@ class MerchantGalaxyTest {
         items.put("Iron",195.5);
 
         assertEquals(items,statementParser.getMetalValues(statements));
+    }
+    @Test
+    void findHowMuchValue(){
+        WordToRomanParser wordToRomanParser = new WordToRomanParser();
+        ArrayList<String> input = new ArrayList<>();
+        input.add("glob is I");
+        input.add("prok is V");
+        input.add("pish is X");
+        input.add("tegj is L");
+        HashMap<String,String> alias = wordToRomanParser.setAlias(input);
 
+        ArrayList<String> input2 = new ArrayList<>();
+        input2.add("glob glob Silver is 34 Credits");
+        input2.add("glob prok Gold is 57800 Credits");
+        input2.add("pish pish Iron is 3910 Credits");
+
+        StatementParser statementParser = new StatementParser();
+        ArrayList<Statement> statements = statementParser.setUnknownItem(input2,alias);
+        HashMap<String,Double> metals = statementParser.getMetalValues(statements);
+
+        ArrayList<String> input3 = new ArrayList<>();
+        input3.add("how much is pish tegj glob glob ?");
+
+        QuestionParser questionParser = new QuestionParser();
+
+        assertEquals(42,questionParser.findHowMuchValue(input3,metals,alias));
     }
 }

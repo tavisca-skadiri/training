@@ -66,5 +66,4 @@ public class StatementParser {
         }
         return metals;
     }
-
 }
