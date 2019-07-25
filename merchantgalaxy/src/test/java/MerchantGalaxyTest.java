@@ -133,4 +133,35 @@ class MerchantGalaxyTest {
 
         assertEquals(42,questionParser.findHowMuchValue(input3,metals,alias));
     }
+    @Test
+    void findHowManyCredits(){
+        WordToRomanParser wordToRomanParser = new WordToRomanParser();
+        ArrayList<String> input = new ArrayList<>();
+        input.add("glob is I");
+        input.add("prok is V");
+        input.add("pish is X");
+        input.add("tegj is L");
+        HashMap<String,String> alias = wordToRomanParser.setAlias(input);
+
+        ArrayList<String> input2 = new ArrayList<>();
+        input2.add("glob glob Silver is 34 Credits");
+        input2.add("glob prok Gold is 57800 Credits");
+        input2.add("pish pish Iron is 3910 Credits");
+
+        StatementParser statementParser = new StatementParser();
+        ArrayList<Statement> statements = statementParser.setUnknownItem(input2,alias);
+        HashMap<String,Double> metals = statementParser.getMetalValues(statements);
+
+        ArrayList<String> input3 = new ArrayList<>();
+        input3.add("how many Credits is glob prok Silver ?");
+        input3.add("how many Credits is glob prok Gold ?");
+        input3.add("how many Credits is glob prok Iron ?");
+
+        QuestionParser questionParser = new QuestionParser();
+        ArrayList<Integer> result = new ArrayList<>();
+        result.add(68);
+        result.add(57800);
+        result.add(782);
+        assertEquals(result.toString(),questionParser.findHowManyCredits(input3,metals,alias).toString());
+    }
 }

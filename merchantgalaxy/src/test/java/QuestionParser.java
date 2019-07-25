@@ -51,13 +51,29 @@ public class QuestionParser {
                     romanString.append(word);
                     romanString.append(" ");
                 }
-                else if(metals.containsKey(word)) {
-                    romanString.append(word);
-                    romanString.append(" ");
-                }
             }
         }
         String romanNumber = generateRomanNumber(romanString.toString(),alias);
         return (int)romanToDecimal(romanNumber);
+    }
+    ArrayList<Integer> findHowManyCredits(ArrayList<String> input, HashMap<String, Double> metals, HashMap<String,String> alias){
+        ArrayList<Integer> credits = new ArrayList<>();
+        for(String line : input) {
+            StringBuilder romanString = new StringBuilder();
+            String[] words = line.split(" ");
+            double metalValue = 0.0;
+            for (String word : words) {
+                if (alias.containsKey((word))) {
+                    romanString.append(word);
+                    romanString.append(" ");
+                } else if (metals.containsKey(word)) {
+                    metalValue = metals.get(word);
+                }
+            }
+            String romanNumberString = generateRomanNumber(romanString.toString(), alias);
+            int romanNumber = (int) romanToDecimal(romanNumberString);
+            credits.add((int) (romanNumber * metalValue));
+        }
+        return credits;
     }
 }
