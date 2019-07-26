@@ -1,54 +1,51 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 class MerchantGalaxyTest {
+    private ArrayList<String> input,input2;
+    @BeforeEach
+    void beforeAll(){
+        input = new ArrayList<>(){{
+            add("glob is I");
+            add("prok is V");
+            add("pish is X");
+            add("tegj is L");
+        }};
+        input2 = new ArrayList<>(){{
+            add("glob glob Silver is 34 Credits");
+            add("glob prok Gold is 57800 Credits");
+            add("pish pish Iron is 3910 Credits");
+        }};
+    }
     @Test
     void setAlias(){
         AliasToRomanParser aliasToRomanParser = new AliasToRomanParser();
-        ArrayList<String> input = new ArrayList<>();
-        input.add("glob is I");
-        input.add("prok is V");
-        input.add("pish is X");
-        input.add("tegj is L");
-
-        HashMap<String,String> items  = new HashMap<>();
-        items.put("glob","I");
-        items.put("prok","V");
-        items.put("pish","X");
-        items.put("tegj","L");
-
-        assertEquals(items, aliasToRomanParser.parseAliasToRoman(input));
+        HashMap<String,String> result  = new HashMap<>();
+        result.put("glob","I");
+        result.put("prok","V");
+        result.put("pish","X");
+        result.put("tegj","L");
+        assertEquals(result, aliasToRomanParser.parseAliasToRoman(input));
     }
     @Test
     void checkAliasToNumberConversion(){
         AliasToRomanParser aliasToRomanParser = new AliasToRomanParser();
-        ArrayList<String> input = new ArrayList<>();
-        input.add("glob is I");
-        input.add("prok is V");
-        input.add("pish is X");
-        input.add("tegj is L");
         HashMap<String,String> alias = aliasToRomanParser.parseAliasToRoman(input);
 
-        HashMap<String,Double> items  = new HashMap<>();
-        items.put("glob",1.0);
-        items.put("prok",5.0);
-        items.put("pish",10.0);
-        items.put("tegj",50.0);
-
-        assertEquals(items, aliasToRomanParser.parseAliasToNumber(input,alias));
+        HashMap<String,Double> result  = new HashMap<>();
+        result.put("glob",1.0);
+        result.put("prok",5.0);
+        result.put("pish",10.0);
+        result.put("tegj",50.0);
+        assertEquals(result, aliasToRomanParser.parseAliasToNumber(input,alias));
     }
     @Test
     void generateRomanString(){
         AliasToRomanParser aliasToRomanParser = new AliasToRomanParser();
-        ArrayList<String> input = new ArrayList<>();
-        input.add("glob is I");
-        input.add("prok is V");
-        input.add("pish is X");
-        input.add("tegj is L");
         HashMap<String,String> alias = aliasToRomanParser.parseAliasToRoman(input);
 
         String input3 = "glob glob Silver";
@@ -58,17 +55,7 @@ class MerchantGalaxyTest {
     @Test
     void setStatement(){
         AliasToRomanParser aliasToRomanParser = new AliasToRomanParser();
-        ArrayList<String> input = new ArrayList<>();
-        input.add("glob is I");
-        input.add("prok is V");
-        input.add("pish is X");
-        input.add("tegj is L");
         HashMap<String,String> alias = aliasToRomanParser.parseAliasToRoman(input);
-
-        ArrayList<String> input2 = new ArrayList<>();
-        input2.add("glob glob Silver is 34 Credits");
-        input2.add("glob prok Gold is 57800 Credits");
-        input2.add("pish pish Iron is 3910 Credits");
 
         CreditsToMetalParser creditsToMetalParser = new CreditsToMetalParser();
         ArrayList<Statement> statements = new ArrayList<>();
@@ -84,47 +71,30 @@ class MerchantGalaxyTest {
         assertEquals(1903, RomanNumberUtils.romanToDecimal("MCMIII"));
     }
     @Test
+    void checkIfRomanNumberValid(){
+        assertTrue(RomanNumberUtils.isRomanNumberValid("II"));
+        assertTrue(RomanNumberUtils.isRomanNumberValid("XXXIV"));
+        assertTrue(RomanNumberUtils.isRomanNumberValid("MCMIII"));
+        assertFalse(RomanNumberUtils.isRomanNumberValid("VX"));
+    }
+    @Test
     void findValueOfMetals(){
         AliasToRomanParser aliasToRomanParser = new AliasToRomanParser();
-        ArrayList<String> input = new ArrayList<>();
-        input.add("glob is I");
-        input.add("prok is V");
-        input.add("pish is X");
-        input.add("tegj is L");
         HashMap<String,String> alias = aliasToRomanParser.parseAliasToRoman(input);
-
-        ArrayList<String> input2 = new ArrayList<>();
-        input2.add("glob glob Silver is 34 Credits");
-        input2.add("glob prok Gold is 57800 Credits");
-        input2.add("pish pish Iron is 3910 Credits");
 
         CreditsToMetalParser creditsToMetalParser = new CreditsToMetalParser();
         ArrayList<Statement> statements = creditsToMetalParser.getStatements(input2,alias);
 
-        HashMap<String,Double> items  = new HashMap<>();
-        items.put("Silver",17.0);
-        items.put("Gold",14450.0);
-        items.put("Iron",195.5);
-
-        assertEquals(items, creditsToMetalParser.getMetalValues(statements));
+        HashMap<String,Double> result  = new HashMap<>();
+        result.put("Silver",17.0);
+        result.put("Gold",14450.0);
+        result.put("Iron",195.5);
+        assertEquals(result, creditsToMetalParser.getMetalValues(statements));
     }
     @Test
     void findHowMuchValue(){
         AliasToRomanParser aliasToRomanParser = new AliasToRomanParser();
-        ArrayList<String> input = new ArrayList<>();
-        input.add("glob is I");
-        input.add("prok is V");
-        input.add("pish is X");
-        input.add("tegj is L");
         HashMap<String,String> alias = aliasToRomanParser.parseAliasToRoman(input);
-
-        ArrayList<String> input2 = new ArrayList<>();
-        input2.add("glob glob Silver is 34 Credits");
-        input2.add("glob prok Gold is 57800 Credits");
-        input2.add("pish pish Iron is 3910 Credits");
-
-        CreditsToMetalParser creditsToMetalParser = new CreditsToMetalParser();
-        ArrayList<Statement> statements = creditsToMetalParser.getStatements(input2,alias);
 
         ArrayList<String> input3 = new ArrayList<>();
         input3.add("how much is pish tegj glob glob ?");
@@ -136,17 +106,7 @@ class MerchantGalaxyTest {
     @Test
     void findHowManyCredits(){
         AliasToRomanParser aliasToRomanParser = new AliasToRomanParser();
-        ArrayList<String> input = new ArrayList<>();
-        input.add("glob is I");
-        input.add("prok is V");
-        input.add("pish is X");
-        input.add("tegj is L");
         HashMap<String,String> alias = aliasToRomanParser.parseAliasToRoman(input);
-
-        ArrayList<String> input2 = new ArrayList<>();
-        input2.add("glob glob Silver is 34 Credits");
-        input2.add("glob prok Gold is 57800 Credits");
-        input2.add("pish pish Iron is 3910 Credits");
 
         CreditsToMetalParser creditsToMetalParser = new CreditsToMetalParser();
         ArrayList<Statement> statements = creditsToMetalParser.getStatements(input2,alias);

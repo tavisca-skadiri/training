@@ -2,7 +2,7 @@ class Statement {
     private String romanNumber;
     private int credits;
     private String unknownMetal;
-    public Statement(String romanNumber, int credits, String unknownMetal) {
+    Statement(String romanNumber, int credits, String unknownMetal) {
         this.romanNumber = romanNumber;
         this.credits = credits;
         this.unknownMetal = unknownMetal;

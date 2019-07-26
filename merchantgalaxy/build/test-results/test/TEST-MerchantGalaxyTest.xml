@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MerchantGalaxyTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-07-25T19:48:26" hostname="RENTLAPT0060" time="0.077">
+<testsuite name="MerchantGalaxyTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-07-26T08:55:27" hostname="RENTLAPT0060" time="0.095">
   <properties/>
-  <testcase name="checkAliasToNumberConversion()" classname="MerchantGalaxyTest" time="0.028"/>
-  <testcase name="findHowManyCredits()" classname="MerchantGalaxyTest" time="0.006"/>
-  <testcase name="setStatement()" classname="MerchantGalaxyTest" time="0.024"/>
+  <testcase name="checkAliasToNumberConversion()" classname="MerchantGalaxyTest" time="0.031"/>
+  <testcase name="checkIfRomanNumberValid()" classname="MerchantGalaxyTest" time="0.003"/>
+  <testcase name="findHowManyCredits()" classname="MerchantGalaxyTest" time="0.009"/>
+  <testcase name="setStatement()" classname="MerchantGalaxyTest" time="0.028"/>
   <testcase name="generateRomanString()" classname="MerchantGalaxyTest" time="0.002"/>
-  <testcase name="findValueOfMetals()" classname="MerchantGalaxyTest" time="0.002"/>
-  <testcase name="setAlias()" classname="MerchantGalaxyTest" time="0.001"/>
-  <testcase name="getValueOfRomanNumberString()" classname="MerchantGalaxyTest" time="0.001"/>
-  <testcase name="findHowMuchValue()" classname="MerchantGalaxyTest" time="0.001"/>
+  <testcase name="findValueOfMetals()" classname="MerchantGalaxyTest" time="0.003"/>
+  <testcase name="setAlias()" classname="MerchantGalaxyTest" time="0.002"/>
+  <testcase name="getValueOfRomanNumberString()" classname="MerchantGalaxyTest" time="0.002"/>
+  <testcase name="findHowMuchValue()" classname="MerchantGalaxyTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

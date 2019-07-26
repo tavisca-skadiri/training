@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.regex.Pattern;
+
 class RomanNumberUtils {
     static final HashMap<String,Double> romanToIntegerMap = new HashMap<>(){{
         put("I",1.0);
@@ -10,23 +12,29 @@ class RomanNumberUtils {
         put("M",1000.0);
     }};
     static double romanToDecimal(String romanNumber) {
-        double res = 0;
-        for (int alphabet=0; alphabet<romanNumber.length(); alphabet++) {
-            double currentRomanNumber = romanToIntegerMap.get(String.valueOf(romanNumber.charAt(alphabet)));
-            if ( alphabet+1 < romanNumber.length()) {
-                double nextRomanNumber = romanToIntegerMap.get(String.valueOf(romanNumber.charAt(alphabet + 1)));
-                if (currentRomanNumber >= nextRomanNumber)
-                    res += currentRomanNumber;
-                else {
-                    res += nextRomanNumber - currentRomanNumber;
+        double result = 0;
+        if(isRomanNumberValid(romanNumber)) {
+            for (int alphabet = 0; alphabet < romanNumber.length(); alphabet++) {
+                double currentRomanNumber = romanToIntegerMap.get(String.valueOf(romanNumber.charAt(alphabet)));
+                if (alphabet + 1 < romanNumber.length()) {
+                    double nextRomanNumber = romanToIntegerMap.get(String.valueOf(romanNumber.charAt(alphabet + 1)));
+                    if (currentRomanNumber >= nextRomanNumber)
+                        result += currentRomanNumber;
+                    else {
+                        result += nextRomanNumber - currentRomanNumber;
+                        alphabet++;
+                    }
+                } else {
+                    result += currentRomanNumber;
                     alphabet++;
                 }
             }
-            else {
-                res += currentRomanNumber;
-                alphabet++;
-            }
         }
-        return res;
+        return result;
+    }
+    static boolean isRomanNumberValid(String romanNumeral){
+        return Pattern.compile("^(?=[MDCLXVI])M*(C[MD]|D?C{0,3})(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$")
+                    .matcher(romanNumeral)
+                    .matches();
     }
 }

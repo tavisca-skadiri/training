@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="407b321e-2334-4e1c-a226-4b394664d770" name="Default Changelist" comment="romanString">
-      <change afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/src/main/java/QuestionParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AliasToRomanParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CreditsToMetalParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/QuestionAnswerParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RomanNumberUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/5.5.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/build/reports/tests/test/classes/MerchantGalaxyTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/build/reports/tests/test/classes/MerchantGalaxyTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/build/test-results/test/TEST-MerchantGalaxyTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/build/test-results/test/TEST-MerchantGalaxyTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/src/main/java/StatementParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/src/main/java/StatementParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/src/main/java/WordToRomanParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/src/main/java/WordToRomanParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../day3/merchantgalaxy/src/test/java/MerchantGalaxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day3/merchantgalaxy/src/test/java/MerchantGalaxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/CreditsToMetalParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/QuestionAnswerParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/MerchantGalaxyTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/test/MerchantGalaxyTest$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -40,23 +17,26 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WordToRomanParser$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/WordToRomanParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/AliasToRomanParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/AliasToRomanParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/QuestionParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RomanNumberUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RomanNumberUtils$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RomanNumberUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/RomanNumberUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Statement.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Statement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/StatementParser.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/MerchantGalaxyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/MerchantGalaxyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/QuestionParser$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/QuestionParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/Statement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/StatementParser$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/StatementParser.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/MerchantGalaxyTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/MerchantGalaxyTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-MerchantGalaxyTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-MerchantGalaxyTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WordToRomanParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AliasToRomanParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AliasToRomanParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CreditsToMetalParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CreditsToMetalParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QuestionAnswerParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QuestionAnswerParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RomanNumberUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RomanNumberUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Statement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MerchantGalaxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MerchantGalaxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Statement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Statement.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -82,8 +62,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AliasToRomanParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="119">
+              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MerchantGalaxyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding>
+                <element signature="class#481:520" />
+                <element signature="initializer##0;class#481:695" />
+                <element signature="method#setStatement#0;class#MerchantGalaxyTest#0" />
+                <element signature="method#findValueOfMetals#0;class#MerchantGalaxyTest#0" />
+                <element signature="method#findHowMuchValue#0;class#MerchantGalaxyTest#0" />
+                <element signature="method#findHowManyCredits#0;class#MerchantGalaxyTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/RomanNumberUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-152">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Statement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding>
+                <element signature="method#Statement#0;class#Statement#0" />
+                <element signature="method#toString#0;class#Statement#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/QuestionAnswerParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,58 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CreditsToMetalParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MerchantGalaxyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2533">
-              <caret line="149" selection-start-line="149" selection-end-line="149" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/RomanNumberUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Statement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-              <folding>
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#693#694#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/QuestionAnswerParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <state relative-caret-position="510">
+              <caret line="30" column="33" selection-start-line="30" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,12 +140,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>getst</find>
+      <find>input</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,14 +161,17 @@
         <option value="$PROJECT_DIR$/src/test/java/StatementParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/QuestionParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/WordToRomanParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Statement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MerchantGalaxyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/StatementParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/QuestionParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/AliasToRomanParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RomanNumberUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/CreditsToMetalValueParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Statement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Parser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ParserInvoker.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MerchantGalaxyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RomanNumberUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AliasToRomanParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/CreditsToMetalParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/QuestionAnswerParser.java" />
       </list>
     </option>
   </component>
@@ -226,6 +212,19 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="merchantgalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="merchantgalaxy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="merchantgalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="merchantgalaxy" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -241,7 +240,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -349,47 +348,46 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MerchantGalaxyTest - 2019.07.25 at 22h 38m 43s.xml">
-      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MerchantGalaxyTest - 2019.07.25 at 23h 09m 13s.xml">
-      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MerchantGalaxyTest - 2019.07.25 at 23h 14m 10s.xml">
-      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MerchantGalaxyTest - 2019.07.25 at 23h 14m 27s.xml">
-      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MerchantGalaxyTest - 2019.07.25 at 23h 34m 20s.xml">
-      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MerchantGalaxyTest_getValueOfRomanNumberString - 2019.07.25 at 23h 53m 42s.xml">
-      <configuration name="MerchantGalaxyTest.getValueOfRomanNumberString" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MerchantGalaxyTest_getValueOfRomanNumberString - 2019.07.25 at 23h 55m 27s.xml">
-      <configuration name="MerchantGalaxyTest.getValueOfRomanNumberString" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="MerchantGalaxyTest_getValueOfRomanNumberString - 2019.07.26 at 00h 01m 24s.xml">
-      <configuration name="MerchantGalaxyTest.getValueOfRomanNumberString" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="MerchantGalaxyTest - 2019.07.26 at 01h 14m 19s.xml">
       <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
     </history-entry>
     <history-entry file="MerchantGalaxyTest - 2019.07.26 at 01h 18m 24s.xml">
       <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="MerchantGalaxyTest - 2019.07.26 at 01h 24m 01s.xml">
+      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MerchantGalaxyTest - 2019.07.26 at 01h 31m 05s.xml">
+      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MerchantGalaxyTest - 2019.07.26 at 12h 12m 08s.xml">
+      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MerchantGalaxyTest - 2019.07.26 at 12h 13m 08s.xml">
+      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MerchantGalaxyTest - 2019.07.26 at 12h 14m 45s.xml">
+      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MerchantGalaxyTest - 2019.07.26 at 12h 15m 20s.xml">
+      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MerchantGalaxyTest - 2019.07.26 at 12h 20m 05s.xml">
+      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="MerchantGalaxyTest - 2019.07.26 at 14h 11m 57s.xml">
+      <configuration name="MerchantGalaxyTest" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22995462" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.23373677" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -397,7 +395,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32952693" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.16639479" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3132137" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39967373" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -460,64 +458,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/QuestionAnswerParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ParserInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AliasToRomanParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MerchantGalaxyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2533">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        <state relative-caret-position="136">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RomanNumberUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CreditsToMetalParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="class#481:520" />
+            <element signature="initializer##0;class#481:695" />
+            <element signature="method#setStatement#0;class#MerchantGalaxyTest#0" />
+            <element signature="method#findValueOfMetals#0;class#MerchantGalaxyTest#0" />
+            <element signature="method#findHowMuchValue#0;class#MerchantGalaxyTest#0" />
+            <element signature="method#findHowManyCredits#0;class#MerchantGalaxyTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Statement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="102">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
+            <element signature="method#Statement#0;class#Statement#0" />
+            <element signature="method#toString#0;class#Statement#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RomanNumberUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CreditsToMetalParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="33" selection-start-line="30" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/QuestionAnswerParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
