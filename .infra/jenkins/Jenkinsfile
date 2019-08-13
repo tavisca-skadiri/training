@@ -3,12 +3,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh script: '''
-		./gradlew.bat build
-		java -version
-                    echo "I am in build step"
-                ''',
-            label: "Building Project"
+               bat label: '', script: '''
+cd merchantgalaxy
+set JAVA_HOME="C:\\Program Files\\Java\\jdk-10"
+echo $JAVA_HOME
+ .\\gradlew.bat build
+cd ..
+@RD /S /Q merchantgalaxy
+'''
             }
         }
         stage('Test')
