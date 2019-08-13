@@ -50,11 +50,4 @@ cd ..
             }
         }
     }
-    post{
-        always{
-            node("osx || linux") {
-                deleteDir()
-            }
-        }
-    }
 }
