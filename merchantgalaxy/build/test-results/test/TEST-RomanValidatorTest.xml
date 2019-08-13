@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RomanValidatorTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-07-26T09:18:08" hostname="RENTLAPT0060" time="0.066">
+  <properties/>
+  <testcase name="canValidateSequenceOfRomanLiterals1()" classname="RomanValidatorTest" time="0.027"/>
+  <testcase name="canValidateSequenceOfRomanLiterals2()" classname="RomanValidatorTest" time="0.001"/>
+  <testcase name="canValidateTheSingleRomanLiteral()" classname="RomanValidatorTest" time="0.003"/>
+  <testcase name="cannotValidateWrongSequenceOfRomanLiterals1()" classname="RomanValidatorTest" time="0.001"/>
+  <testcase name="cannotValidateWrongSequenceOfRomanLiterals2()" classname="RomanValidatorTest" time="0.003"/>
+  <testcase name="cannotValidateWrongSequenceOfRomanLiterals3()" classname="RomanValidatorTest" time="0.013"/>
+  <testcase name="cannotValidateWrongSequenceOfRomanLiterals4()" classname="RomanValidatorTest" time="0.002"/>
+  <testcase name="cannotValidateWrongSequenceOfRomanLiterals5()" classname="RomanValidatorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
