@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh script: '''
-		./gradlew build
+		./gradlew.bat build
 		java -version
                     echo "I am in build step"
                 ''',
