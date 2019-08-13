@@ -52,7 +52,9 @@ cd ..
     }
     post{
         always{
-            deleteDir()
+            node("osx || linux") {
+                deleteDir()
+            }
         }
     }
 }
