@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               bat label: '', script: '''
+               sh script: '''
                cd merchantgalaxy
                .\\gradlew.bat build
                cd ..
