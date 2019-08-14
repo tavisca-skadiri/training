@@ -16,6 +16,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am in Test step"
+                    cd merchantgalaxy
                     ./gradlew test
                 ''',
             label: "Running Unit Test Cases"
