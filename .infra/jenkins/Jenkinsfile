@@ -5,9 +5,9 @@ pipeline {
             steps {
                sh script: '''
                cd merchantgalaxy
-               .\\gradlew.bat build
-               cd ..
-               @RD /S /Q merchantgalaxy
+               echo "I am in build step"
+               chmod +x gradlew
+               ./gradlew build
                '''
             }
         }
@@ -16,6 +16,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am in Test step"
+                    ./gradlew test
                 ''',
             label: "Running Unit Test Cases"
             }
