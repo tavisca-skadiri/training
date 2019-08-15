@@ -1,5 +1,7 @@
 pipeline {
-    agent none
+    agent {
+                docker { image 'maven:3-alpine' }
+    }
     environment {
         registry = "saqlainkadiri/skhello"
         registryCredential = 'dockerhub'
@@ -38,9 +40,6 @@ pipeline {
         }
         stage('Build DockerImage')
         {
-            agent {
-                docker { image 'maven:3-alpine' }
-            }
             steps {
                 script {
                     mvn --version
