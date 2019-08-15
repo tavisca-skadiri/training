@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    environment {
+        registry = "gustavoapolinario/docker-test"
+        registryCredential = 'dockerhub'
+        dockerImage = ''
+    }
     stages {
         stage('Build') {
             steps {
@@ -33,24 +38,20 @@ pipeline {
         }
         stage('Build DockerImage')
         {
-            agent {
-                docker { image 'node:7-alpine' }
-            }
             steps {
-                sh script: '''
-                    echo "I am Building DockerImage."
-                    docker build .infra/docker/Dockerfile
-                ''',
-            label: "Building Docker Image"
+                script {
+                  docker.build registry + ":$BUILD_NUMBER"
+                }
             }
         }
         stage('Publish DockerImage')
         {
-            steps {
-                sh script: '''
-                    echo "I am Pubishing DockerImage."
-                ''',
-            label: "Publishing Docker Image"
+            steps{
+                script {
+                    docker.withRegistry( '', registryCredential ) {
+                        dockerImage.push()
+                    }
+                }
             }
         }
     }
