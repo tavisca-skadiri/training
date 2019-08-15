@@ -36,7 +36,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Building DockerImage."
-                    docker build ../docker/Dockerfile
+                    docker build .infra/docker/Dockerfile
                 ''',
             label: "Building Docker Image"
             }
