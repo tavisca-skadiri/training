@@ -1,11 +1,15 @@
 pipeline {
     agent any
+    environment {
+        registry = "saqlainkadiri/skhome"
+        registryCredential = 'dockerhub'
+    }
     stages {
         stage('Build') {
             steps {
                sh script: '''
                cd merchantgalaxy
-               echo "I am in build step"
+               echo "I am in build step."
                chmod +x gradlew
                ./gradlew build
                '''
@@ -15,7 +19,7 @@ pipeline {
         {
             steps {
                 sh script: '''
-                    echo "I am in Test step"
+                    echo "I am in Test step."
                     cd merchantgalaxy
                     ./gradlew test
                 ''',
@@ -26,7 +30,7 @@ pipeline {
         {
             steps {
                 sh script: '''
-                    echo "I am in Sonarqube scan"
+                    echo "I am in Sonarqube scan."
                 ''',
             label: "Running Sonarqube Scan"
             }
@@ -35,7 +39,8 @@ pipeline {
         {
             steps {
                 sh script: '''
-                    echo "I am Building DockerImage ="
+                    echo "I am Building DockerImage."
+                    docker.build registry + ":$BUILD_NUMBER"
                 ''',
             label: "Building Docker Image"
             }
@@ -44,7 +49,7 @@ pipeline {
         {
             steps {
                 sh script: '''
-                    echo "I am Pubishing DockerImage ="
+                    echo "I am Pubishing DockerImage."
                 ''',
             label: "Publishing Docker Image"
             }
