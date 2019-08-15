@@ -38,9 +38,13 @@ pipeline {
         }
         stage('Build DockerImage')
         {
+            agent {
+                docker { image 'maven:3-alpine' }
+            }
             steps {
                 script {
-                  docker.build registry + ":$BUILD_NUMBER"
+                    mvn --version
+                    docker.build registry + ":$BUILD_NUMBER"
                 }
             }
         }
