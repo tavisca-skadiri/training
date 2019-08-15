@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    environment {
-        registry = "saqlainkadiri/skhome"
-        registryCredential = 'dockerhub'
-    }
     stages {
         stage('Build') {
             steps {
@@ -40,7 +36,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Building DockerImage."
-                    docker.build registry + ":$BUILD_NUMBER"
+                    docker build ../docker/Dockerfile
                 ''',
             label: "Building Docker Image"
             }
