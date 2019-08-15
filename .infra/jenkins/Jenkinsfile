@@ -1,5 +1,4 @@
 pipeline {
-    agent any
     environment {
         registry = "saqlainkadiri/skhello"
         registryCredential = 'dockerhub'
