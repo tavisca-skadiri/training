@@ -40,7 +40,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Building DockerImage"
-                    docker ps
+                    docker run --privileged -d docker:dind
                 ''',
             label: "Building Docker Image"
             }
