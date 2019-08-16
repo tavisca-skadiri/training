@@ -36,7 +36,6 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Building DockerImage"
-                    chmod +x docker
                     docker ps
                 ''',
             label: "Building Docker Image"
