@@ -35,6 +35,7 @@ pipeline {
         {
             steps {
                 sh script: '''
+                    checkout scm
                     echo "I am Building DockerImage"
                     chmod +x docker
                     docker ps
