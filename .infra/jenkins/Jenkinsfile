@@ -34,11 +34,8 @@ pipeline {
         stage('Build DockerImage')
         {
             steps {
-                sh script: '''
-                    echo "I am Building DockerImage"
-                    docker build -t my-web-server -f ./.infra/docker/Dockerfile .
-                ''',
-            label: "Building Docker Image"
+                echo "Deploying The Project Chat-Application"
+				sh "docker build -t 'chatapplication' -f .infra/docker/Dockerfile ."
             }
         }
         stage('Publish DockerImage')
