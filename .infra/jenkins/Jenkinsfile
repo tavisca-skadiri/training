@@ -36,7 +36,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Building DockerImage"
-                    docker run --privileged -d docker:dind
+                    docker build -t my-web-server -f ./.infra/docker/Dockerfile .
                 ''',
             label: "Building Docker Image"
             }
