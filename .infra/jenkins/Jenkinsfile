@@ -33,10 +33,6 @@ pipeline {
         }
         stage('Build DockerImage')
         {
-            agent {
-                docker { image 'node:7-alpine' }
-            }
-    
             steps {
                 sh script: '''
                     echo "I am Building DockerImage"
